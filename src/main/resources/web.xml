@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app   
+PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"   
+"http://java.sun.com/dtd/web-app_2_3.dtd">  
+<web-app>  
+<!-- WechatServlet -->  
+<servlet>  
+    <servlet-name>WechatServlet</servlet-name> 
+    <servlet-class>com.wechat.core.WechatServlet</servlet-class> 
+    <init-param>
+    	<param-name>ApiClass</param-name>
+    	<param-value>com.wechat.test.WechatApi</param-value>
+    </init-param>
+</servlet>  
+<!-- WechatServlet -->  
+<servlet-mapping>  
+    <servlet-name>WechatServlet</servlet-name>  
+    <url-pattern>/wechat</url-pattern>  
+</servlet-mapping>  
+<!-- ... -->  
+</web-app>  
+
